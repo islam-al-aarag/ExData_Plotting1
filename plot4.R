@@ -18,7 +18,7 @@ lines(times, data$Sub_metering_2, t='s', col='red')
 lines(times, data$Sub_metering_3, t='s', col='blue')
 legend("topright", col = c('black', 'red', 'blue'),
        legend = c('Sub_metering_1', 'Sub_metering_2',
-                  'Sub_metering_3'), lty=1)
+                  'Sub_metering_3'), lty=1, bty='n')
 
 plot(times, data$Global_reactive_power, type='l',
      ylab='Global_reactive_power', xlab='datetime')
